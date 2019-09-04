@@ -50,7 +50,7 @@ const cardBulder = (pieArr) =>{
  pieString += `  
  <div class="col-3">
  <div class="card">
- <img src="${currentPie.imageUrl}" class="card-img-top" alt="...">
+ <img src="${currentPie.imageUrl}" class="card-img-top " alt="...">
  <div class="card-body">
    <h5 class="card-title">${currentPie.name}</h5>
    <p class="card-text">${currentPie.instructor}   ${currentPie.iceCream}</p>
