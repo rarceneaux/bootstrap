@@ -1,6 +1,7 @@
 const zoelink = document.getElementById('zoe');
 const greglink = document.getElementById('greg');
 const mikelink  = document.getElementById('michael');
+const alllink = document.getElementById('all');
 
 
 
@@ -89,7 +90,7 @@ const filterEvents = (e) => {
     cardBulder(mikePies);
   }
 };
-// filterEvents();
+
 
 const linkEvents = (e) => {
   $("#zoe").on('click',filterEvents);
@@ -97,3 +98,13 @@ const linkEvents = (e) => {
   $("#michael").on('click',filterEvents);
 } 
 linkEvents();
+
+const showAll = (e)=> {
+  cardBulder(pies);
+}
+
+
+const allPies = (e) => {
+  $("#all").on('click',showAll);
+}
+allPies()
